@@ -23,7 +23,7 @@ def get_magnet_url(s_url, e, a):
             viewport={"width": 1280, "height": 800},
         )
 
-        # 🚀 block heavy assets
+        # block heavy assets
         def block(route):
             if route.request.resource_type in ("image", "font", "media"):
                 route.abort()
@@ -77,7 +77,7 @@ def get_magnet_url(s_url, e, a):
 
         context.close()
 
-    # 🚀 build final structured dict
+    # build final structured dict
     episodes_dict = {}
 
     for ep in raw:
